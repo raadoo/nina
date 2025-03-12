@@ -1,0 +1,8 @@
+# Dependency directories
+node_modules/
+
+# File types
+.DS_Store
+
+# Distribution folder
+dist/*

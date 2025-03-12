@@ -1,0 +1,209 @@
+@font-face {
+  font-family: "Fira Sans";
+  src:
+    local("Fira Sans"),
+    url("./../fonts/FiraSans-Bold.eot") format("eot"),
+    url("./../fonts/FiraSans-Bold.woff") format("woff"),
+    url("./../fonts/FiraSans-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  src:
+    local("Fira Sans"),
+    url("./../fonts/FiraSans-Italic.eot") format("eot"),
+    url("./../fonts/FiraSans-Italic.woff") format("woff"),
+    url("./../fonts/FiraSans-Italic.woff2") format("woff2");
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  src:
+    local("Fira Sans"),
+    url("./../fonts/FiraSans-Regular.eot") format("eot"),
+    url("./../fonts/FiraSans-Regular.woff") format("woff"),
+    url("./../fonts/FiraSans-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
+:root {
+
+	/* ================================================================ */
+	/* PRIMITIVES */
+
+
+	/* Colours */
+
+		--nds-primary: #01796B;
+		--nds-primary-10: #018E7E;
+		--nds-primary-20: #02A793;
+		--nds-primary-30: #09D8BF;
+
+		--nds-secondary: #F8B465;
+
+		--nds-neutral: #0F0F0F;
+		--nds-neutral-10: #1C1C1C;
+		--nds-neutral-20: #242424;
+		--nds-neutral-30: #4A4A4A;
+		--nds-neutral-40: #A1A1A1;
+		--nds-neutral-50: #F7F7F7;
+
+		--nds-primary-0-translucent: hsla(173deg, 2%, 25%, 0);
+		--nds-primary-10-translucent: hsla(173deg, 2%, 25%, 0.4);
+		--nds-primary-20-translucent: hsla(173deg, 38%, 25%, 0.5);
+		--nds-neutral-10-translucent: hsla(0deg, 0%, 11%, 0.5);
+		--nds-neutral-50-translucent: hsla(0deg, 0%, 97%, 0.3);
+
+		--nds-filter-luminance: #6F6F6F;
+		--nds-filter-red: #951E1E;
+		--nds-filter-green: #237023;
+		--nds-filter-blue: #24248E;
+		--nds-filter-hydrogen: #6C2323;
+		--nds-filter-sulphur: #793F26;
+		--nds-filter-oxygen: #245053;
+		--nds-filter-dark: #000000;
+
+		--nds-guiding-ra: #D14F4F;
+		--nds-guiding-dec: #5F5FD1;
+
+
+	/* Font Family */
+
+		--nds-font: 'Fira Sans';
+
+	/* Scales */
+
+		--nds-sedna: calc(var(--nds-mercury) / 20);
+		--nds-ceres: calc(var(--nds-mercury) / 10);
+		--nds-pluto: calc(var(--nds-mercury) / 3.3333);
+		--nds-luna: calc(var(--nds-mercury) / 2);
+		--nds-io: calc(var(--nds-mercury) / 1.6666);
+		--nds-callisto: calc(var(--nds-mercury) / 1.4285);
+		--nds-mercury: 20px;
+		--nds-titan: calc(var(--nds-mercury) * 1.4);
+		--nds-ganymede: calc(var(--nds-mercury) * 2);
+		--nds-mars: calc(var(--nds-mercury) * 3);
+		--nds-venus: calc(var(--nds-mercury) * 4);
+		--nds-earth: calc(var(--nds-mercury) * 5);
+		--nds-neptune: calc(var(--nds-mercury) * 6);
+		--nds-uranus: calc(var(--nds-mercury) * 8);
+		--nds-saturn: calc(var(--nds-mercury) * 12);
+		--nds-jupiter: calc(var(--nds-mercury) * 16);
+		--nds-sol: calc(var(--nds-mercury) * 24);
+
+	/* Timing */
+
+		--nds-time: 0.2s;
+
+
+	/* ================================================================ */
+	/* ALIASES */
+
+		/* Body */
+
+			--nds-a-body_background: var(--nds-neutral-10);
+			--nds-a-body_color: var(--nds-neutral-50);
+			--nds-a-body_font: var(--nds-font);
+
+		/* Buttons */
+
+			--nds-a-button_background: var(--nds-primary);
+			--nds-a-button_radius: var(--nds-pluto);
+			--nds-a-button_color: var(--nds-neutral-50);
+			--nds-a-button_font-size: var(--nds-callisto);
+			--nds-a-button_font-weight: bold;
+			--nds-a-button_gap: var(--nds-pluto);
+			--nds-a-button_leading: var(--nds-mercury);
+			--nds-a-button_padding-x: var(--nds-callisto);
+			--nds-a-button_padding-y: var(--nds-luna);
+			--nds-a-button_time: var(--nds-time);
+
+			--nds-a-button-hover_background: var(--nds-primary-10);
+
+			--nds-a-button-disabled_background: var(--nds-neutral-30);
+
+			/* VARIANT: CHICLET */
+
+				--nds-a-button-chiclet_size: var(--nds-a-sidebar_width);
+				--nds-a-button-chiclet_background: var(--nds-neutral-20);
+				--nds-a-button-chiclet_bordersize: var(--nds-sedna);
+				--nds-a-button-chiclet_border: var(--nds-neutral-30);
+				--nds-a-button-chiclet_label: var(--nds-neutral-50);
+				
+				--nds-a-button-chiclet-hover_background: var(--nds-primary);
+				--nds-a-button-chiclet-hover_border: var(--nds-primary-10);
+
+				--nds-a-button-chiclet-active_background: var(--nds-neutral);
+				--nds-a-button-chiclet-active_border: var(--nds-neutral-20);
+				--nds-a-button-chiclet-active_label: var(--nds-neutral-40);
+
+			/* VARIANT: CONTEXT */
+
+				--nds-a-button-context_background: transparent;
+				--nds-a-button-context_font-weight: normal;
+				--nds-a-button-context_padding-x: var(--nds-mercury);
+				--nds-a-button-context_padding-y: var(--nds-callisto);
+
+				--nds-a-button-context-active_background: var(--nds-primary-20);
+				--nds-a-button-context-active_blur: var(--nds-luna);
+				--nds-a-button-context-active_spread: var(--nds-ceres);
+				--nds-a-button-context-active_size: var(--nds-pluto);
+
+			/* VARIANT: WINDOWS TASKBAR */
+
+				--nds-a-button-os-taskbar_background: var(--nds-neutral-20);
+				--nds-a-button-os-taskbar_border: var(--nds-primary-20);
+
+		/* Inputs */
+
+			--nds-a-input_background: var(--nds-neutral-10);
+			--nds-a-input_border-size: var(--nds-sedna);
+			--nds-a-input_border-color: var(--nds-neutral-40);
+			--nds-a-input_color: var(--nds-neutral-50);
+			--nds-a-input_font-size: var(--nds-callisto);
+			--nds-a-input_leading: var(--nds-mercury);
+			--nds-a-input_padding-x: var(--nds-luna);
+			--nds-a-input_padding-y: var(--nds-luna);
+			--nds-a-input_time: var(--nds-time);
+
+			--nds-a-input-hover_border-color: var(--nds-primary-10);
+
+			--nds-a-input-focus_border-color: var(--nds-neutral-50);
+
+
+		/* COMPONENT: OS MENU BAR */
+
+			--nds-a-os-menubar_background: var(--nds-neutral-30);
+			--nds-a-os-menubar_font-size: var(--nds-callisto);
+			--nds-a-os-menubar_gap: var(--nds-luna);
+			--nds-a-os-menubar-padding-x: var(--nds-callisto);
+			--nds-a-os-menubar-padding-y: var(--nds-pluto);
+
+			--nds-a-os-menubar-list_gap: var(--nds-mercury);
+
+		/* COMPONENT: OS TASK BAR */
+
+			--nds-a-os-taskbar_background: var(--nds-neutral);
+			--nds-a-os-taskbar-input_background: var(--nds-neutral-30);
+
+		/* COMPONENT: SIDEBAR */
+
+			--nds-a-sidebar_background: var(--nds-neutral);
+			--nds-a-sidebar_border: var(--nds-neutral-30);
+			--nds-a-sidebar_border-size: var(--nds-sedna);
+			--nds-a-sidebar_width: var(--nds-venus);
+			--nds-a-sidebar-logo_background: var(--nds-neutral-10);
+			--nds-a-sidebar-logo_padding: var(--nds-callisto);
+
+		/* COMPONENT: CONTEXTBAR */
+
+			--nds-a-contextbar_background: var(--nds-neutral-20);
+			--nds-a-contextbar_border: var(--nds-neutral-30);
+			--nds-a-contextbar_border-size: var(--nds-sedna);
+			
+}

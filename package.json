@@ -1,0 +1,24 @@
+{
+  "name": "nina-web-components",
+  "description": "User Interface Web Components for NINA",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nina-wc.git"
+  },
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "files": [
+    "./dist/**/*"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "web-dev-server --config web-dev-server.config.js",
+    "build": "webpack"
+  },
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@web/dev-server": "^0.4.6",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1"
+  }
+}

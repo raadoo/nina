@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N.I.N.A. &mdash; Gear</title>
+    <link rel="preload stylesheet" as="style" href="css/style.css">
+  </head>
+  <body>
+    <!-- <nds-app-loader></nds-app-loader> -->
+    <nds-layout hidden>
+      <div slot="menubar">
+        <nds-os-menubar hidden></nds-os-menubar>
+      </div>
+      <div slot="sidebar">
+        <nds-sidebar hidden current="gear"></nds-sidebar>
+      </div>
+      <div slot="contextbar">
+        <nds-contextbar hidden context="gear"></nds-contextbar>
+      </div>
+      <div slot="main">
+        
+      </div>
+      <div slot="taskbar">
+        <nds-os-taskbar hidden></nds-os-taskbar>
+      </div>
+    </nds-layout>
+
+    <script async defer type="module" src="./components/index.js"></script>
+  </body>
+</html>

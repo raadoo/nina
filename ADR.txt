@@ -1,0 +1,8 @@
+- The constructor() class should only register default values and events; do not inspect attributes or descendents, or add new ones in this class
+- Components use closing tags to signal that they're Web Components
+- Attributes are used for states and variants, not for content
+- Attributes must be lowercase
+- Content is placed in <slot>
+- component-level CSS should always be loaded after global CSS to ensure proper cascade inheritance
+- Components and their inner workings inherit from Global CSS first, then apply their own overrides
+- All component-level CSS is in the single component .js file

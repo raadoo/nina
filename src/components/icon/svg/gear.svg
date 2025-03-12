@@ -1,0 +1,23 @@
+<svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<defs>
+		<style>
+			.f{ 
+				fill: ${color};
+				stroke: none; }
+				
+			.s{ 
+				fill: none; 
+				stroke: ${color};
+				stroke-linecap: round;
+				stroke-width: 1.5; }
+		</style>
+	</defs>
+	<g class="s">
+		<path d="M5 18.3333L10.8333 10M10.8333 10L16.6667 18.3333M10.8333 10L10 17.5" />
+	</g>
+	<g class="f">
+		<rect x="3.33334" y="6.88574" width="15.8333" height="5.83333" rx="1" transform="rotate(-25.7773 3.33334 6.88574)" />
+		<path d="M0.833333 10.0002L4.16667 8.33357L5.41667 10.9506L3.33333 11.7839L0.833333 10.0002Z" />
+		<path d="M0.416667 8.33316L1.66667 7.49983L2.5 9.1665L1.25 9.99983L0.416667 8.33316Z" />
+	</g>
+</svg>
